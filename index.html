@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ALTER TABLE Guide</title>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+        margin: 30px;
+    }
+    h1, h2, h3 {
+        margin-top: 24px;
+    }
+    code, pre {
+        background: #f4f4f4;
+        padding: 10px;
+        border-radius: 6px;
+        display: block;
+        white-space: pre-wrap;
+    }
+    hr {
+        margin: 30px 0;
+    }
+</style>
+</head>
+<body>
+
+<h2>ALTER TABLE</h2>
+<p>ALTER TABLE lets you modify an existing table’s structure.</p>
+<p>Here’s what you can do:</p>
+
+<h3>1 Add a new column</h3>
+
+<pre><code class="language-sql">
+ALTER TABLE table_name
+ADD column_name datatype;
+</code></pre>
+
+<p>Examples:</p>
+
+<p>Add a birthdate column:</p>
+<pre><code class="language-sql">
+ALTER TABLE employees
+ADD birthdate DATE;
+</code></pre>
+
+<p>Add a nullable text column:</p>
+<pre><code class="language-sql">
+ALTER TABLE employees
+ADD nickname VARCHAR(50);
+</code></pre>
+
+<p>Add multiple columns at once:</p>
+<pre><code class="language-sql">
+ALTER TABLE employees
+ADD (
+    department VARCHAR(100),
+    hire_date DATE
+);
+</code></pre>
+
+<hr>
+
+<h3>2 Modify an existing column</h3>
+<p>Different databases use different wording, but here are the common forms:</p>
+
+<p>Change data type:</p>
+<pre><code class="language-sql">
+ALTER TABLE employees
+MODIFY salary DECIMAL(10,2);
+</code></pre>
+
+<p>Rename a column:</p>
+
+<p><strong>MySQL:</strong></p>
+<pre><code class="language-sql">
+ALTER TABLE employees
+CHANGE COLUMN old_name new_name VARCHAR(100);
+</code></pre>
+
+
+<hr>
+
+<h3>3 Drop a column (delete it)</h3>
+
+<pre><code class="language-sql">
+ALTER TABLE employees
+DROP COLUMN nickname;
+</code></pre>
+
+<p>Drop multiple columns:</p>
+<pre><code class="language-sql">
+ALTER TABLE employees
+DROP COLUMN department,
+DROP COLUMN hire_date;
+</code></pre>
+
+<p>Deleting columns affects data permanently, so double-check before firing that query.</p>
+
+<hr>
+
+<h2>Extra power moves</h2>
+
+<p>Add a column with a default:</p>
+<pre><code class="language-sql">
+ALTER TABLE employees
+ADD status VARCHAR(20) DEFAULT 'active';
+</code></pre>
+
+<p>Set a column to NOT NULL later:</p>
+<pre><code class="language-sql">
+ALTER TABLE employees
+MODIFY status VARCHAR(20) NOT NULL;
+</code></pre>
+
+<p>Add a primary key:</p>
+<pre><code class="language-sql">
+ALTER TABLE employees
+ADD PRIMARY KEY (id);
+</code></pre>
+
+<p>Drop a primary key:</p>
+<pre><code class="language-sql">
+ALTER TABLE employees
+DROP PRIMARY KEY;
+</code></pre>
+
+<hr>
+
+<h2>Quick practice</h2>
+
+<p>Create this table:</p>
+<pre><code class="language-sql">
+CREATE TABLE employees (
+    id INT PRIMARY KEY,
+    name VARCHAR(100)
+);
+</code></pre>
+
+<p>Now apply changes:</p>
+<ol>
+    <li>Add salary as a decimal value</li>
+    <li>Rename name to full_name</li>
+    <li>Remove salary</li>
+</ol>
+
+
+</body>
+</html>
