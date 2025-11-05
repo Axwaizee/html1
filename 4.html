@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Practice — Basic Forms with Input and Labels</title>
+</head>
+<body>
+  <h1>HTML Practice — Basic Forms</h1>
+  <p>This page helps you learn how to create simple HTML forms. Forms let users enter data such as their name, email, and messages. The key elements you’ll learn are <strong>&lt;form&gt;</strong>, <strong>&lt;label&gt;</strong>, and <strong>&lt;input&gt;</strong>.</p>
+  <hr>
+
+  <h2>Form basics</h2>
+  <p>A form starts with the <code>&lt;form&gt;</code> tag and can contain different types of inputs like text boxes, radio buttons, and checkboxes. The <code>&lt;label&gt;</code> tag gives a name to each input and helps make forms accessible.</p>
+
+  <h3>Example 1: Simple contact form</h3>
+  <form action="#" method="get">
+    <p><label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name"></p>
+
+    <p><label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email"></p>
+
+    <p><label for="message">Message:</label><br>
+    <input type="text" id="message" name="message" placeholder="Type your message here"></p>
+
+    <p><input type="submit" value="Submit"></p>
+  </form>
+  <hr>
+
+  <h3>Example 2: Radio buttons and checkboxes</h3>
+  <form action="#" method="get">
+    <p><strong>Choose your favorite color:</strong></p>
+    <label><input type="radio" name="color" value="red"> Red</label><br>
+    <label><input type="radio" name="color" value="blue"> Blue</label><br>
+    <label><input type="radio" name="color" value="green"> Green</label><br>
+
+    <p><strong>Choose your hobbies:</strong></p>
+    <label><input type="checkbox" name="hobby" value="reading"> Reading</label><br>
+    <label><input type="checkbox" name="hobby" value="music"> Music</label><br>
+    <label><input type="checkbox" name="hobby" value="sports"> Sports</label><br>
+
+    <p><input type="submit" value="Submit Choices"></p>
+  </form>
+  <hr>
+
+  <h3>Example 3: Password and number fields</h3>
+  <form action="#" method="post">
+    <p><label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" placeholder="Enter username"></p>
+
+    <p><label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter password"></p>
+
+    <p><label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" min="1" max="120"></p>
+
+    <p><input type="submit" value="Login"></p>
+  </form>
+  <hr>
+
+  <h2>Practice Section</h2>
+  <p>Try these exercises:</p>
+  <ul>
+    <li>Create a new form asking for a user’s name, favorite subject, and email address.</li>
+    <li>Add a checkbox that says “Subscribe to newsletter”.</li>
+    <li>Add a submit button that says “Send”.</li>
+    <li>Experiment with different input types like <strong>password</strong>, <strong>number</strong>, and <strong>radio</strong>.</li>
+  </ul>
+  <hr>
+
+  <h2>Summary</h2>
+  <p>On this page, you practiced the most common form elements: <strong>&lt;form&gt;</strong>, <strong>&lt;label&gt;</strong>, and <strong>&lt;input&gt;</strong>. You also saw how to use different input types such as text, email, password, number, radio, and checkbox. Try editing and reloading this page in a browser to see your changes take effect.</p>
+</body>
+</html>
