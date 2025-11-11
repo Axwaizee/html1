@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Practice — Tables</title>
+</head>
+<body>
+  <h1>HTML Practice — Working with Tables</h1>
+  <p>In this lesson, you'll learn how to create tables in HTML. Tables help display information in rows and columns, such as schedules, prices, or student lists.</p>
+  <hr>
+
+  <h2>Basic Table Structure</h2>
+  <p>A table starts with the <strong>&lt;table&gt;</strong> tag and is made up of table rows (<strong>&lt;tr&gt;</strong>), table headers (<strong>&lt;th&gt;</strong>), and table data cells (<strong>&lt;td&gt;</strong>).</p>
+
+  <p>Here’s a simple example:</p>
+  <pre><code>&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+    &lt;th&gt;Country&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Alice&lt;/td&gt;
+    &lt;td&gt;20&lt;/td&gt;
+    &lt;td&gt;USA&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Bob&lt;/td&gt;
+    &lt;td&gt;22&lt;/td&gt;
+    &lt;td&gt;Canada&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+  <h3>Example Output</h3>
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>Alice</td>
+      <td>20</td>
+      <td>USA</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>22</td>
+      <td>Canada</td>
+    </tr>
+  </table>
+  <hr>
+
+  <h2>Adding More Rows and Columns</h2>
+  <p>You can add as many rows (<strong>&lt;tr&gt;</strong>) and columns (<strong>&lt;td&gt;</strong>) as needed. Every row should have the same number of data cells to keep the table aligned.</p>
+  <p>Here’s a table of students and their subjects:</p>
+  <table border="1">
+    <tr>
+      <th>Student</th>
+      <th>Subject</th>
+      <th>Score</th>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Math</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>Sara</td>
+      <td>English</td>
+      <td>88</td>
+    </tr>
+    <tr>
+      <td>Tom</td>
+      <td>Science</td>
+      <td>92</td>
+    </tr>
+  </table>
+  <hr>
+
+  <h2>Adding Table Headings and Captions</h2>
+  <p>You can add a title to a table using the <strong>&lt;caption&gt;</strong> tag. The caption appears above the table.</p>
+
+  <table border="1">
+    <caption>Student Grades</caption>
+    <tr>
+      <th>Student</th>
+      <th>Grade</th>
+    </tr>
+    <tr>
+      <td>Emily</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Michael</td>
+      <td>B+</td>
+    </tr>
+  </table>
+  <hr>
+
+  <h2>Merging Cells with colspan and rowspan</h2>
+  <p>Sometimes you need a cell to stretch across multiple columns or rows. Use <strong>colspan</strong> and <strong>rowspan</strong> for that.</p>
+
+  <p>Example:</p>
+  <pre><code>&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th colspan="2"&gt;Merged Header&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Left&lt;/td&gt;
+    &lt;td&gt;Right&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+  <table border="1">
+    <tr>
+      <th colspan="2">Merged Header</th>
+    </tr>
+    <tr>
+      <td>Left</td>
+      <td>Right</td>
+    </tr>
+  </table>
+  <hr>
+
+  <h2>Practice Section</h2>
+  <p>Try these exercises:</p>
+  <ul>
+    <li>Create a table with 3 columns: Name, Age, City, and add at least 4 rows of your own data.</li>
+    <li>Add a caption to your table.</li>
+    <li>Use <strong>colspan</strong> to merge two columns in the header.</li>
+    <li>Create a second table showing your weekly study schedule with days as columns and subjects as rows.</li>
+  </ul>
+  <hr>
+
+  <h2>Summary</h2>
+  <p>In this lesson, you learned how to create tables using <strong>&lt;table&gt;</strong>, <strong>&lt;tr&gt;</strong>, <strong>&lt;th&gt;</strong>, and <strong>&lt;td&gt;</strong>. You also saw how to use <strong>&lt;caption&gt;</strong>, <strong>colspan</strong>, and <strong>rowspan</strong> to make tables more informative and well-structured.</p>
+  <p>Now try editing this file and adding your own tables to get comfortable with the structure.</p>
+</body>
+</html>
