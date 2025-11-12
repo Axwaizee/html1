@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Practice — Semantic HTML</title>
+</head>
+<body>
+  <header>
+    <h1>HTML Practice — Understanding Semantic HTML</h1>
+    <p>In this lesson, you’ll learn about semantic HTML tags that describe the meaning and structure of a webpage, not just how it looks. These tags make pages easier for browsers, search engines, and assistive technologies to understand.</p>
+  </header>
+  <hr>
+
+  <main>
+    <section>
+      <h2>What is Semantic HTML?</h2>
+      <p>Semantic HTML uses meaningful tags to define different parts of a webpage. Instead of using only &lt;div&gt; and &lt;span&gt;, semantic tags like &lt;header&gt;, &lt;footer&gt;, and &lt;article&gt; tell what kind of content they contain.</p>
+      <p>For example, a &lt;header&gt; represents the top section of a page, while an &lt;article&gt; represents a standalone piece of content like a blog post or a news story.</p>
+    </section>
+    <hr>
+
+    <section>
+      <h2>Common Semantic Tags</h2>
+      <article>
+        <h3>&lt;header&gt;</h3>
+        <p>The header element usually contains a title, logo, or navigation menu.</p>
+        <p>Example:</p>
+        <pre><code>&lt;header&gt;
+  &lt;h1&gt;My Website&lt;/h1&gt;
+  &lt;nav&gt;
+    &lt;a href="#home"&gt;Home&lt;/a&gt; |
+    &lt;a href="#about"&gt;About&lt;/a&gt; |
+    &lt;a href="#contact"&gt;Contact&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+      </article>
+
+      <article>
+        <h3>&lt;nav&gt;</h3>
+        <p>The navigation element defines a set of links for navigating the website.</p>
+        <p>Example:</p>
+        <pre><code>&lt;nav&gt;
+  &lt;a href="#news"&gt;News&lt;/a&gt; |
+  &lt;a href="#articles"&gt;Articles&lt;/a&gt; |
+  &lt;a href="#contact"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+      </article>
+
+      <article>
+        <h3>&lt;section&gt;</h3>
+        <p>The section element groups related content together. Each section should have its own heading.</p>
+        <p>Example:</p>
+        <pre><code>&lt;section&gt;
+  &lt;h2&gt;About Us&lt;/h2&gt;
+  &lt;p&gt;We are a team of learners exploring HTML.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+      </article>
+
+      <article>
+        <h3>&lt;article&gt;</h3>
+        <p>The article element is used for independent, self-contained content such as a blog post, news story, or forum post.</p>
+        <p>Example:</p>
+        <pre><code>&lt;article&gt;
+  &lt;h2&gt;HTML Becomes Easier&lt;/h2&gt;
+  &lt;p&gt;With practice, HTML becomes simple to understand.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+      </article>
+
+      <article>
+        <h3>&lt;aside&gt;</h3>
+        <p>The aside element contains content related to the main content but not essential to it. It’s often used for sidebars or notes.</p>
+        <p>Example:</p>
+        <pre><code>&lt;aside&gt;
+  &lt;h3&gt;Tip&lt;/h3&gt;
+  &lt;p&gt;Keep your code clean and properly indented!&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+      </article>
+
+      <article>
+        <h3>&lt;figure&gt; and &lt;figcaption&gt;</h3>
+        <p>These tags are used for images, diagrams, or code examples with captions.</p>
+        <p>Example:</p>
+        <pre><code>&lt;figure&gt;
+  &lt;img src="semantic-structure.png" alt="Semantic HTML layout" width="400"&gt;
+  &lt;figcaption&gt;Figure 1: Example of semantic HTML layout.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+      </article>
+
+      <article>
+        <h3>&lt;footer&gt;</h3>
+        <p>The footer element usually contains author information, copyright, or related links at the bottom of the page.</p>
+        <p>Example:</p>
+        <pre><code>&lt;footer&gt;
+  &lt;p&gt;&amp;copy; 2025 My Website&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+      </article>
+    </section>
+    <hr>
+
+    <section>
+      <h2>Putting It All Together — Example Page Layout</h2>
+      <pre><code>&lt;header&gt;
+  &lt;h1&gt;Daily News&lt;/h1&gt;
+  &lt;nav&gt;
+    &lt;a href="#home"&gt;Home&lt;/a&gt; |
+    &lt;a href="#world"&gt;World&lt;/a&gt; |
+    &lt;a href="#sports"&gt;Sports&lt;/a&gt; |
+    &lt;a href="#contact"&gt;Contact&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+  &lt;section&gt;
+    &lt;article&gt;
+      &lt;h2&gt;Technology Advances in 2025&lt;/h2&gt;
+      &lt;p&gt;This year has seen amazing progress in artificial intelligence and web development tools.&lt;/p&gt;
+      &lt;figure&gt;
+        &lt;img src="tech-news.jpg" alt="Tech gadgets" width="400"&gt;
+        &lt;figcaption&gt;New technology shaping our world.&lt;/figcaption&gt;
+      &lt;/figure&gt;
+    &lt;/article&gt;
+  &lt;/section&gt;
+  &lt;aside&gt;
+    &lt;h3&gt;Did you know?&lt;/h3&gt;
+    &lt;p&gt;Semantic HTML helps with accessibility and SEO!&lt;/p&gt;
+  &lt;/aside&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;&amp;copy; 2025 Daily News&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+    </section>
+    <hr>
+
+    <section>
+      <h2>Practice Section</h2>
+      <p>Try these exercises:</p>
+      <ul>
+        <li>Create a basic website layout using &lt;header&gt;, &lt;main&gt;, and &lt;footer&gt;.</li>
+        <li>Add a &lt;nav&gt; element inside the header with at least 3 links.</li>
+        <li>Inside &lt;main&gt;, add one &lt;section&gt; with two &lt;article&gt; elements about your favorite topics.</li>
+        <li>Add an &lt;aside&gt; section with one fun fact related to your article content.</li>
+        <li>Include a &lt;figure&gt; with an image and &lt;figcaption&gt; that explains it.</li>
+      </ul>
+    </section>
+    <hr>
+
+    <section>
+      <h2>Summary</h2>
+      <p>In this lesson, you learned how semantic HTML makes web content more organized and meaningful. Using these tags helps users and search engines understand your page better. Always choose the most meaningful tag for your content!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created for HTML Beginners — Semantic HTML Practice Page</p>
+  </footer>
+</body>
+</html>
