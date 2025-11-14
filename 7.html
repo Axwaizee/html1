@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Practice — Links and Anchors</title>
+</head>
+<body>
+  <h1>HTML Practice — Links and Anchors</h1>
+  <p>In this lesson, you'll learn how to create links using the <strong>&lt;a&gt;</strong> tag. Links (also called anchors) connect web pages together and help users navigate through a website or to other pages on the internet.</p>
+  <hr>
+
+  <h2>Basic Link Structure</h2>
+  <p>The basic syntax of a link is:</p>
+  <pre><code>&lt;a href="URL"&gt;Link Text&lt;/a&gt;</code></pre>
+  <p><strong>href</strong> stands for "hyperlink reference" — it tells the browser where the link should go.</p>
+
+  <h3>Example:</h3>
+  <p><code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code></p>
+  <p>Result:</p>
+  <p><a href="https://www.example.com">Visit Example</a></p>
+  <hr>
+
+  <h2>Opening Links in a New Tab</h2>
+  <p>You can make a link open in a new tab using the <strong>target</strong> attribute with the value <strong>_blank</strong>.</p>
+  <pre><code>&lt;a href="https://www.wikipedia.org" target="_blank"&gt;Open Wikipedia in new tab&lt;/a&gt;</code></pre>
+  <p>Result:</p>
+  <p><a href="https://www.wikipedia.org" target="_blank">Open Wikipedia in new tab</a></p>
+  <hr>
+
+  <h2>Linking to Pages in the Same Folder</h2>
+  <p>If you have another HTML file in the same folder, you can link to it using its filename instead of a full URL.</p>
+  <pre><code>&lt;a href="about.html"&gt;About Us&lt;/a&gt;</code></pre>
+  <p>Result (only works if you have a file named <strong>about.html</strong>):</p>
+  <p><a href="about.html">About Us</a></p>
+  <hr>
+
+  <h2>Linking to a Specific Section on a Page</h2>
+  <p>You can jump to a specific part of a page using an <strong>id</strong> attribute and a link with a <strong>#</strong> symbol before the id name.</p>
+  <pre><code>&lt;a href="#contact"&gt;Go to Contact Section&lt;/a&gt;
+...
+&lt;h2 id="contact"&gt;Contact Us&lt;/h2&gt;</code></pre>
+
+  <p>Try it below:</p>
+  <p><a href="#bottom">Go to the bottom of this page</a></p>
+  <hr>
+
+  <h2>Email and Phone Links</h2>
+  <p>Use <strong>mailto:</strong> for email links and <strong>tel:</strong> for phone numbers.</p>
+  <pre><code>&lt;a href="mailto:info@example.com"&gt;Send an Email&lt;/a&gt;<br>&lt;a href="tel:+1234567890"&gt;Call Us&lt;/a&gt;</code></pre>
+  <p>Result:</p>
+  <p><a href="mailto:info@example.com">Send an Email</a><br>
+  <a href="tel:+1234567890">Call Us</a></p>
+  <hr>
+
+  <h2>Using Images as Links</h2>
+  <p>You can turn an image into a clickable link by placing the <strong>&lt;img&gt;</strong> tag inside an <strong>&lt;a&gt;</strong> tag.</p>
+  <pre><code>&lt;a href="https://www.example.com"&gt;
+  &lt;img src="logo.png" alt="Website Logo" width="100"&gt;
+&lt;/a&gt;</code></pre>
+  <p>If you have a file named <strong>logo.png</strong> in your folder, it will appear below as a clickable image:</p>
+  <a href="https://www.example.com">
+    <img src="logo.png" alt="Website Logo" width="100">
+  </a>
+  <hr>
+
+  <h2>Practice Section</h2>
+  <p>Try these exercises:</p>
+  <ul>
+    <li>Create a link to your favorite website.</li>
+    <li>Make that link open in a new tab.</li>
+    <li>Add a second link that points to another HTML page in your folder.</li>
+    <li>Add a link that scrolls to a specific section on your page (use an id).</li>
+    <li>Create an email link and a phone number link.</li>
+    <li>Insert an image that acts as a link to another site.</li>
+  </ul>
+  <hr>
+
+  <h2 id="bottom">Summary</h2>
+  <p>In this lesson, you learned how to use the &lt;a&gt; tag to create different types of links: external links, internal links, section jumps, and even clickable images. Links are the backbone of the web, connecting pages and information together.</p>
+  <p>Next, you’ll learn how to organize navigation menus using lists and anchors together.</p>
+</body>
+</html>
